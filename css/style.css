@@ -1,0 +1,175 @@
+/* Core style */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family:sans-serif;
+	font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	text-decoration: none;
+}
+
+textarea:focus,     
+select:focus {
+	outline: none !important;
+	-webkit-appearance: none;
+	box-shadow: none !important;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+input:focus {
+	outline: none !important;
+}
+
+a:active,
+a:focus {
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+/*Header section styles*/
+
+.text-primary{
+    color: #f7c08a;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    padding: 13px 20px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;    
+}
+.btn:hover{
+    background-color: #f7c08a;
+    color: #333;
+}
+.header{
+    background: #333;
+    padding: 20px 0;
+}
+.container{
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.header .logo{
+    font-size: 1.5rem;
+}
+.logo a{
+    color: #fff;
+}
+.header .navigation .nav-list{
+    display: flex;
+    margin: 0;
+}
+.nav-list .nav-item{
+    list-style: none;
+}
+.nav-list .nav-item .nav-link{
+    color: #fff;
+    padding: 26px;
+}
+.nav-list .nav-item .nav-link.active{
+    background-color: #444;
+    color: #f7c08a;
+}
+.nav-list .nav-item:hover .nav-link{
+    background-color: #444;
+    color: #f7c08a;
+}
+
+
+/* showcase section styles */
+.showcase{
+    background: url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.showcase-info{
+    padding-top: 170px;
+    text-align: center;
+}
+.showcase-info h1{
+    color: #fff;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.showcase-info p{
+    margin: 10px 0;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* hotel-info section styles */
+.hotel-info{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.hotel-info>div{
+    width: 50%;
+}
+.hotel-info__img{
+    width: 50%;
+    background-image: url('../img/photo-1.jpg');
+}
+.hotel-info__content{
+    background-color: #333;
+    text-align: center;
+    padding: 50px 30px;
+}
+.hotel-info__content .hotel-info__title{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.hotel-info__content .hotel-info__description{
+    padding-bottom: 20px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+}
+.hotel-info .btn-two{
+    color: #333;
+    background-color: #fff;
+}
+.hotel-info .btn-two:hover{
+    background-color: #f7c08a;
+}
